@@ -24,7 +24,8 @@ urlpatterns = [
 	url(r'^$', views.home_page, name='home'),
 	url(r'^lists/new$', views.new_list, name='new_list'),
 	# (.+) is a capture group. It passes everything between / and /
-	# as an argument to the view
-	url(r'^lists/(.+)/$', views.view_list, name='view_list'),
+	# as an argument to the view. (\d+) only captures digits
+	url(r'^lists/(\d+)/$', views.view_list, name='view_list'),
+	url(r'^lists/(\d+)/add_item$', views.add_item, name='add_item'),
 ]
 
