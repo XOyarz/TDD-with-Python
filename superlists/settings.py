@@ -25,7 +25,7 @@ SECRET_KEY = '+#yv=w+@(%b!1&f(idn8b*&!lum!i64o0c)qa&swlja2eoo8^@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["lingerous.com", ]
 
 
 # Application definition
